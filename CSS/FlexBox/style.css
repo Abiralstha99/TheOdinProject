@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    max-width: 800px;
+    gap: 7px;
+    border: 5px solid firebrick;
+}
+
+.one, .two, .three {
+    flex-basis: 100px; /* Set the base size */
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: coral;
+}
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto;
+    }
+}
+
